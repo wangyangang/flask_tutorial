@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}View "{{ post['title'] }}"{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+	<h2>{{post.title}}</h2>
+	<div>
+		{{post.body}}
+	</div>
+{% endblock %}
